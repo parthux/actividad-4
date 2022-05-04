@@ -1,0 +1,443 @@
+/*utilice 6 flex y 6 float(estan marcados donde los utilice), porque en el caso de los flex: no pude solucionar un par de problemas con inline-block y recurri a flex, en el de float: fue mas que todo para colocar bien las imagenes dentro de los botones, no se me ocurrio una idea para colocarlas sin float*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    font-family: 'Roboto',sans-serif;
+    background: #fff;
+    
+}
+/*----------------------------------------------------------------------------------------------HEADER-----------------------------------------------------------------------------------------------*/
+.header{
+    display:block;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/*-------------------------------------------------------------------------------------------HEADER-MENU-1------------------------------------------------------------------------------------------*/
+.header .menu{  
+    width: 100%;
+    display: inline-block;
+    background-color: #ed1c24;
+    height: 50px;
+}
+.header .menu a{
+    color: white;
+}
+.header .links-menu{
+    display: inherit;
+    font-size: 12px; 
+}
+/*-----------------------------------------------------------------------------------------HEADER-LINKS-MENU-1-y-2-etiqueta-a------------------------------------------------------------------------*/
+.header .links-menu a{
+    display: inline-block;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    text-decoration: none; 
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.header .menu .links-menu .cta-logo-header{
+    float: left;/*------float-------*/
+    margin-top: 10px;
+}
+.header .menu .links-menu .cta-logo-header .logo{  
+    background-image: url('img/Diario26.png');
+    background-size:cover;
+    height: 30px;
+    width: 108px;
+}
+.header .menu .links-menu .cta-vivo{ 
+    margin-left: 40px;
+}
+.header .menu .links-menu .cta-vivo .vivo-logo{
+    float: right;/*------float-------*/
+    margin-top: 14px;
+    margin-left: 5px;
+    background-image: url('icon/live-logo.svg');
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+.header .menu .links-menu .cta-search-header{
+    float: right;/*------float-------*/
+    margin-top: 10px;
+}
+.header .menu .links-menu .cta-search-header .search-logo{ 
+    background-image: url('icon/search.svg');
+    background-size:cover;
+    height: 26px;
+    width: 28px;
+}
+.header .menu .links-menu a:hover{  
+    box-shadow: 0 0 5px 5px #a11a1e5b;
+}
+/*------------------------------------------------------------------------------------------HEADER-MENU-2-------------------------------------------------------------------------------------------*/
+.header .menu-2 a{  
+    color: #3f3f3f;
+}
+.header .menu-2{ 
+    width: 100%;
+    display: inline-block;
+    background-color: #ddd;
+    height: 50px;
+}
+.header .menu-2 .links-menu .margin-a{
+    margin-right: 270px;
+}
+.header .menu-2 .links-menu a:hover{ 
+    box-shadow: 0 0 5px 5px #0a0a0a9f;
+}
+/*-------------------------------------------------------------------------------------Main---------------------------------------------------------------------------------------------------------*/
+.main{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+/*---------------------------------------------------------------------------------MAIN-SECTION-1---------------------------------------------------------------------------------------------------*/
+.main .section-1{
+    display: inline-block;
+    border-bottom: 1px solid #E5E5E5;
+    background-color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.main .section-1 h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.main .section-1 .container{
+    display: flex;/*------flex-------*/
+    flex-wrap: wrap;
+    margin-bottom: 10px;  
+}
+.main .section-1 .container p{  
+    padding: 0 25px 0;
+    font-size: 18px;
+    flex: 80%;
+}
+.main .section-1 .container .redes-sociales{
+    flex: 20%;
+    padding: 0 0 0 65px ;
+}
+.main .section-1 .container .redes-sociales img{
+    width: 40px;
+}
+.main .section-1 .container .redes-sociales img:hover{  
+    transition: .2s; 
+    transform: scale(1.2); 
+}
+.main .section-1 h4{
+    margin-bottom: 20px;
+}
+/*---------------------------------------------------------------------------------MAIN-SECTION-2---------------------------------------------------------------------------------------------------*/
+.main .flex-container{
+    display: flex;/*------flex-------*/
+}
+.main .column1{
+    flex:70%;
+}
+.main .column2{
+    flex:30%;
+    margin-left: 20px;
+}
+.main .flex-container .column1 .section-2 .picture img{
+    width: 100%;
+}
+.main .flex-container .column1 .section-2 p{
+    margin-bottom: 15px;
+}
+.main .flex-container .column1 .section-2 h4{
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 15px;
+}
+/*---------------------------------------------------------------------------------MAIN-SECTION-3---------------------------------------------------------------------------------------------------*/
+.main .flex-container .column1 .section-3{
+    display: flex;/*------flex-------*/
+    margin-bottom: 30px;   
+}
+.main .flex-container .column1 .section-3 article{
+    flex:50%;
+    text-align: center;  
+}
+.main .flex-container .column1 .section-3 a{
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    line-height: 1;
+}
+.main .flex-container .column1 .section-3 a h5:hover{
+    background-color: #3f3f3f3b;
+}
+.main .flex-container .column1 .section-3 article a img{
+    width: 30%;
+    margin-bottom: 20px;
+}
+/*---------------------------------------------------------------------------------MAIN-SECTION-LINK-END---------------------------------------------------------------------------------------------*/
+.main .flex-container .column1 .link-end{
+    display: inline-block;
+}
+.main .flex-container .column1 .link-end a:hover{
+    transition: .2s; 
+    transform: scale(1.2);
+}
+.main .flex-container .column1 .link-end a{  
+    display: inherit;
+    text-decoration: none;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(0,0,0,.6);
+    line-height: 40px;
+    padding: 0 15px;
+    border-radius: 7px;
+    border: 1px solid rgba(220,220,220,1);
+    background-color: #eceff1;
+    margin-bottom: 16px;
+    margin-right: 16px; 
+}
+.main .flex-container .column1 .link-end .cta_logo{
+    float: left;/*------float-------*/
+    margin-top: 4px;
+    margin-right: 5px ;
+    background-image: url('img/lionel_messi_seleccion_argentina.jpg');
+    background-size: cover;
+    height: 30px;
+    width: 40px;
+    border-radius: 5px; 
+}
+.main .flex-container .column1 .link-end .cta_logo-2{ 
+    float: left;/*------float-------*/
+    margin-top: 4px;
+    margin-right: 5px ;
+    background-image: url('img/balon.jpg');
+    background-size: cover;
+    height: 30px;
+    width: 40px;
+    border-radius: 5px; 
+}
+/*-----------------------------------------------------------------------------------Aside----------------------------------------------------------------------------------------------------------*/
+.main .flex-container .column2 .aside-header{
+    display: flex;/*------flex-------*/
+    margin-top: 30px;
+    margin-bottom: 1px ;
+    justify-content: space-between;
+}
+
+.main .flex-container .column2 .aside-header h5{
+    font-size: 15px;
+    line-height: 50px; 
+}
+.main .flex-container .column2 .aside-header .logo-header{ 
+    background-image: url('img/logo-aside.jpg');
+    height: 30px;
+    width: 117.5px;
+    background-size: cover;
+}
+.main .flex-container .column2 .aside-container{
+    border: 1px solid #E5E5E5;
+    width: 100%;
+    height: 22.2%;
+    padding: 10px; 
+}
+.main .flex-container .column2 .aside-container img{
+    display: block;
+    width: 95%;
+    object-fit: contain;
+    height: 40%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.main .flex-container .column2 .aside-container .links a{
+    display: block;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 10px;
+    text-decoration: none;
+    color: rgba(34, 34, 34, 0.76);
+}
+.main .flex-container .column2 .aside-container .links .cta-a-aside{
+    border: none;
+}
+.main .flex-container .column2 .aside-container .links h5{
+    font-size: 14px;
+}
+/*-----------------------------------------------------------------------------------Footer----------------------------------------------------------------------------------------------------------*/
+.footer{
+    width: 100%;
+    margin-top: 15px;
+}
+.footer .container-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*--------------------------------------------------------------------------------Footer-Menu-1-----------------------------------------------------------------------------------------------------*/
+.footer .container-footer .nav-menu{
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.footer .container-footer .nav-menu a{
+    display:inline-block;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 68px;
+    color: #222;
+    border-bottom: 1px solid #222;
+    padding: 0 22px; 
+}
+.footer .container-footer .nav-menu .nav-cta-logo-footer{
+    float: left;/*------float-------*/
+    line-height: none;
+    margin-right: 5px;
+}
+.footer .container-footer .nav-menu .nav-cta-logo-footer .cta-logo-footer{ 
+    background-image: url('icon/home-footer.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 30px;
+    margin-top: 19px;
+}
+.footer .container-footer .nav-menu a:hover{
+    color: #ed1c24;
+}
+
+.footer .container-footer .nav-menu .nav-cta-espectaculos-footer:hover{
+    color: #821199cc;
+}
+.footer .container-footer .nav-menu .nav-cta-canal26-footer{
+    border-bottom: 1px solid #ed1c24;
+}
+.footer .container-footer .nav-menu .nav-cta-latina-footer{
+    border-bottom: 1px solid #edc71cda;
+}
+.footer .container-footer .nav-menu .nav-cta-latina-footer:hover{
+    color: #cfae1cb0;
+}
+.footer .container-footer .nav-menu .nav-cta-volverarriba-footer{
+    border-bottom: none; 
+    color: #3f3f3fa4;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 0;
+}
+.footer .container-footer .nav-menu .nav-cta-volverarriba-footer:hover{
+    text-decoration: underline;
+    color: #222;
+}
+/*--------------------------------------------------------------------------------Footer-Menu-2-----------------------------------------------------------------------------------------------------*/
+.footer .container-footer .nav-menu2{
+    display: flex;/*------flex-------*/
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 35px;
+}
+.footer .container-footer .nav-menu2 .cta-logo2-footer{ 
+    width: 200px;
+}
+.footer .container-footer .nav-menu2 .row-2-3 a , .footer .container-footer .nav-menu2 .row-2-3 h5{   
+    display: block;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 13px;
+    color: #272626c5;
+}
+.footer .container-footer .nav-menu2 .row-2-3 a:hover{
+    color:#222;
+}
+.footer .container-footer .nav-menu2 .redes-sociales-footer a{
+    width: 35px;
+    text-decoration: none;
+}
+.footer .container-footer .nav-menu2 .redes-sociales-footer a img{
+    width: 35px;
+}
+.footer .container-footer .nav-menu2 .redes-sociales-footer .app-store{
+    margin-top: 10px;
+}
+.footer .container-footer .nav-menu2 .redes-sociales-footer .app-store a + a{
+    margin-left: 70px;
+}
+.footer .container-footer .nav-menu2 .redes-sociales-footer .app-store img{
+    width: 100px;
+    height: 35px;
+}
+.footer .container-footer .nav-menu2 .redes-sociales-footer a img:hover{
+    transition: .2s; 
+    transform: scale(1.2);
+}
+.footer .container-footer .nav-menu2 .cta-fiscal-footer{
+    width: 65px;
+    height: 90px;
+}
+/*--------------------------------------------------------------------------------Footer-End-------------------------------------------------------------------------------------------------------*/
+.footer .container-footer .footer-end{
+    margin-top: 10px;
+    display: flex;/*------flex-------*/
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    border-top: 1px solid #E5E5E5;
+}
+.footer .container-footer .footer-end a{
+    text-decoration: none;
+    color: #222;
+    font-weight:700;
+    font-size: 13px;
+}
+.footer .container-footer .footer-end span{
+    color: #272626c5;
+    font-size: 12px;
+}
+/*---------------------------------------------------------------------------------------testing-responsive-----------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px){
+
+    .main .section-1 .container p{ 
+        padding:0;
+        font-size: 18px;
+        flex: 100%;
+    }
+    .main .section-1 .container .redes-sociales{
+        flex: 100%;
+        margin: 10px 0;
+        padding: 0;
+    }   
+    .main .flex-container{
+        flex-wrap: wrap;
+    }
+    .main .flex-container .column1{
+        flex: 100%;
+    }
+    .main .flex-container .column2{
+        flex: 100%;
+    }
+}
+@media screen and (max-width: 900px){
+
+    .main .flex-container .column1 .section-3{
+        flex-wrap: wrap;
+        margin-bottom: 10px;      
+    }
+    .main .flex-container .column1 .section-3 article{
+        flex: 100%; 
+        margin-bottom: 15px; 
+    }
+    .main .flex-container .column1 .section-3 article a img{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    
+}
+  
+
